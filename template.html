@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="hero-section">
+    <header>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="javascript:void(0);" class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+            <img src="assets/images/trucking.png" alt="logoName">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="active">Головна</a>
+            </li>
+            <li>
+              <a href="#map">Ваш маршрут</a>
+            </li>
+            <li>
+              <a href="#about">Про нас</a>
+            </li>
+            <li>
+              <a href="#footer">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-social-media">
+          <a href="javascript:void(0);">
+            <img src="assets/images/gmail.png">
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="head-text">
+      <img src="assets/images/rectangle.png">
+      <p>НАДIЙНА СЛУЖБА
+        <br/> ПЕРЕВЕЗЕНЬ
+      </p>
+    </div>
+    <div class="nav-aboutUs">
+      <button>Про нас</button>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="goolgeMap">
+      <div class="dropdowns-menu">
+        <select name="startPoint" id="startPoint">
+          <option value="startPoint0" disabled selected>Мiсце вiдправлення</option>
+          <option value="startPoint1">Вулиця Соборна</option>
+          <option value="startPoint2">Вулиця Садова</option>
+          <option value="startPoint3">Вулиця Васляева</option>
+        </select>
+        <select name="endPoint" id="endPoint">
+          <option value="endPoint0" disabled selected>Мiсце прибуття</option>
+          <option value="endPoint1">Вулиця Соборна</option>
+          <option value="endPoint2">Вулиця Садова</option>
+          <option value="endPoint3">Вулиця Васляева</option>
+        </select>
+        <select name="vehicleType" id="vehicleType	">
+          <option value="vehicleType0" disabled selected>Тип машини</option>
+          <option value="vehicleType1">грузова</option>
+          <option value="vehicleType2">легкова</option>
+        </select>
+        <select name="time" id="time">
+          <option value="time0" disabled selected>Час вiдправлення</option>
+          <option value="time1">14</option>
+          <option value="time2">15</option>
+          <option value="time3">16</option>
+        </select>
+        <select name="count" id="count">
+          <option value="count0" disabled selected>Кiлькiсть мiсць</option>
+          <option value="count1">10</option>
+          <option value="count2">15</option>
+          <option value="count3">20</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87066.33955387234!2d31.89369215610742!3d47.00444610974028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c84eea96889b%3A0x508f0d27b3166b98!2z0KbQtdC90YLRgNCw0LvRjNC90LjQuSDRgNCw0LnQvtC9LCDQnNC40LrQvtC70LDRl9CyLCDQnNC40LrQvtC70LDRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDU0MDAw!5e0!3m2!1suk!2sua!4v1515861184306"
+        width="100%" height="600" frameborder="0" style="border: none;" allowfullscreen></iframe>
+    </div>
+
+    <div class="left-map-nav">
+      <div class="nav-point-select"></div>
+      <div class="nav-point-placeholder"></div>
+    </div>
+
+    <div id="about" class="our-services">
+      <div class="service-text">
+        <h3>Нашi послуги</h3>
+        <p>Экономте ваш час
+          <br/> подорожуючи з нами.
+          <br/> Витрачайте його з розумом.</p>
+      </div>
+      <div class="service-image"></div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+    <div class="footer-items">
+      <div class="footer-item">
+        <h4>Нашi посилання</h4>
+        <ul>
+          <li>
+            <a href="javascript:void(0);">
+              Головна
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              Ваш маршрут
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              Про нас
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              Контакти
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h4>Наша адреса</h4>
+        <p>
+          Україна,Миколаїв
+          <br/> info@trucking.com
+        </p>
+        <ul>
+          <li>
+            <a href="javascript:void(0);">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 504.72 504.72" xml:space="preserve">
+                <path d="M252.952,0.36C113.784,0.36,0,104.832,0,233.696C0,307.12,36.952,372.624,92.952,415.4v88.96
+									l86.776-47.088c22.896,6.344,47.632,9.76,72.752,9.76c139.168,0,252.24-104.472,252.24-233.336S392.12,0.36,252.952,0.36z
+									 M278.008,314.584l-64.184-68.448L88.608,314.584L226.352,168.36l65.736,68.448l123.656-68.448L278.008,314.584z" />
+                <path d="M252.952,19.648C113.784,19.648,0,104.824,0,233.696C0,307.12,36.952,372.624,92.952,415.4v88.96
+									l86.776-47.088c22.896,6.344,47.632,9.76,72.752,9.76c139.168,0,252.24-104.472,252.24-233.336S392.12,19.648,252.952,19.648z
+									 M278.008,314.584l-64.184-68.448L88.608,314.584L226.352,168.36l65.736,68.448l123.656-68.448L278.008,314.584z" />
+                <g>
+                  <polygon points="401.064,176.488 283.4,227.76 292.088,236.8 	" />
+                  <path d="M412.984,171.288L278.008,314.584l-56.24-59.968l-115.68,50.408l-17.48,9.56l3.096-3.288
+										L27.16,339.008c16.24,29.648,38.416,55.84,65.792,76.392v88.96l86.776-47.088c22.896,6.344,47.632,9.76,72.752,9.76
+										c139.168,0,252.24-104.472,252.24-233.336c0-33.192-8.768-64.144-22.256-92.728L412.984,171.288z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 216 216" xml:space="preserve">
+                <path d="M108,0C48.353,0,0,48.353,0,108s48.353,108,108,108s108-48.353,108-108S167.647,0,108,0z M156.657,60L107.96,98.498
+									L57.679,60H156.657z M161.667,156h-109V76.259l50.244,38.11c1.347,1.03,3.34,1.545,4.947,1.545c1.645,0,3.073-0.54,4.435-1.616
+									l49.374-39.276V156z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h4>Напишiть нам</h4>
+        <input type="text" placeholder="Email" />
+      </div>
+    </div>
+    <p class="copyright">TRUCKING 2017. All RIGHTS RESERVED.</p>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
